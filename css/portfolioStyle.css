@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 96vw;
+    background-color: rgb(165, 157, 157);
+    margin-left: 30px;
+    /* margin-right: 0px; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; 
+    height: 90px;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    top: 0; 
+    left: 0;
+    margin: 0;
+    /* border-radius: 5px; */
+}
+header a {
+    font-size: 22px;
+    color: chocolate;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+    /* text-shadow: 1px 1px 2px rgba(0,0,0,0.2); */
+}
+header div:hover {
+    color: black;
+    height: 30px;
+}
+.main {
+    margin-top:100px; 
+    display: flex;
+    flex-direction: column;
+    block-size: start;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+}
+.details {
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid; */
+    position: relative;
+    /* margin-bottom: 20px; */
+    gap: 20px;
+    /* margin-left: 150px; */
+}
+.details img{
+    width: 100%;
+    height:600px;
+    object-fit: cover;
+    border-radius: 5px;
+    /* margin-left: -100px; */
+}
+.details .mydata{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* height: 300px; */
+}
+.mydata h1{
+    font-size:56px;
+    /* background-color: white; */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.mydata .fullstack{
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.mydata .textArea{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+.mydata .personalDetails{
+    display: flex;
+    width: 680px;
+    height: 40px;
+    font-size: 15px;
+    /* background-color: chocolate; */
+}
+.mydata .personalDetails .gmail{
+    width: 370px;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-left: -20px;
+}
+.mydata .personalDetails .mobile{
+    width: 180px;
+    /* background-color: white; */
+    margin-left: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.mydata .personalDetails .gmail:hover{
+    font-size: 15px;
+}
+.mydata .personalDetails .mobile:hover{
+    font-size: 15px;
+}
+.skills {
+    width: 100%;
+    height: 340px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.skills .skillsheading{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    flex-direction: column;
+    color: chocolate;
+    /* background-color: red; */
+    /* margin-top: 5px; */
+}
+.skills .skillsheading h2:hover{
+    color: black;
+}
+.skillsbox{
+    width: 100%;
+    height: 260px;
+    /* background-color: rgb(11, 1, 1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 10px; */
+}
+.skills .one{
+    width: 130px;
+    height: 140px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px rgb(189, 19, 19);
+}
+.skills .one img
+{
+    width: 130px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.skills .one:hover{
+    height: 145px;
+    /* transition: height 0.3s easy; */
+    box-shadow: 2px 4px 8px rgba(0,0,0,1);
+}
+.projects{
+    /* margin-top: 40px; */
+    /* gap: 100px; */
+    width: 100%;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.projects .projectsTitle{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    flex-direction: column;
+    color: chocolate;
+    margin-top: -20px;
+    /* margin-bottom: 30px; */
+    /* background-color: red; */
+    /* margin-top: 5px; */
+}
+.projects .projectsTitle h2:hover{
+    color: black;
+}
+.projects .projectsInfo{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+    margin-bottom: -40px;
+    /* background-color: black; */
+}
+.projects .projectsInfo::-webkit-scrollbar {
+    display: none;
+}
+.projects .projectsInfo .projectdiv{
+    min-width: 450px;
+    height: 470px;
+    /* margin: 10px; */
+    /* background-color: red; */
+    border-radius: 5px;
+    position: relative;
+    margin-right: 10px;
+    /* gap: 30px; */
+}
+.projectdiv .projectTitle{
+    /* margin: 10px; */
+    width: 430px;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectdiv .projectDescription{
+    /* margin: 10px; */
+    width: 430px;
+    height: 370px;
+    background-color: chocolate;
+    border-radius: 5px;
+}
+.projects .projectsInfo .projectdiv:hover{
+    height: 490px;
+}
+.projectdiv .projectDescription .two img{
+    width: 380px;
+    height: 250px;
+    object-fit:contain;
+    opacity: 0.4;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.projectdiv .projectDescription p{
+    font-size: 20px;
+    /* font-weight: 50; */
+    top: 20%;
+    left: 7%;
+    position: absolute;
+    object-fit: contain;
+    right: 7%;
+    color: white;
+    /* background-color: chocolate; */
+}
+.about{
+    margin-top: -20px;
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+.about .aboutTitle{
+    height:80px;
+    width: 100%;
+    color: chocolate;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.about .me{
+    width: 50%;
+   
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+.about .me p{
+    padding: 20px 20px 20px 20px;
+    font-size: 24px;
+}

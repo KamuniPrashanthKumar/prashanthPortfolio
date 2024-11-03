@@ -1,0 +1,180 @@
+ /*top CSS starts */
+ 
+ body {
+    margin:0 ;
+    padding: 0;
+    background-color: transparent;
+    font-family: "Mukta", sans-serif;
+}
+.topbar{
+background-color: #072044;
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding:10px 80px;
+
+}
+.topbar-contact ul  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topbar-social ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topbar-contact ul li a,.topbar-social ul li a{
+    color: white;
+    padding-right: 16px;
+    text-decoration: none;
+}
+.topbar-contact ul li a span {
+    padding-right: 10px;
+}
+.topbar-social{
+    display: flex;
+
+    align-items: center;
+}
+.topbar-social button{
+    background-color: #2cabe1;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    margin-left: 10px;
+    border-radius: 4px;
+
+}
+.topbar-social ul{
+    border-radius: 1px solid white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Topbar CSS ends */
+  
+ 
+/* Header CSS Starts */
+header{
+  padding: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding:0;
+
+}
+.navbar ul li{
+  padding-left: 20px;
+
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+
+}
+.navbar ul li a:hover{
+  color:#2cabe1;
+}
+/* Header CSS Ends */
+/*Hero section Starts */
+.hero-section{
+background-image:url("../images/main-banner.jpg");
+width:100%;
+height: 500px;
+background-size: cover;
+background-position:center center;
+background-repeat: no-repeat;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+
+}
+.hero-section:before{
+content: "";
+position: absolute;
+background-color: #000;
+width:100%;
+height: 100%;
+opacity:0.4;
+}
+
+.hero-content{
+position:absolute;
+color: #fff;
+
+}
+
+.hero-content h2{
+font-size: 50px;
+font-weight: 800;
+max-width: 10px 0;
+
+}
+.hero-content h2 span{
+color:#2cabe1
+}
+
+.hero-content p{
+width: 100%;
+max-width: 500px;
+margin: 0 auto;
+
+}
+.hero-content .btn-one{
+background-color: #2cabe1;
+color:#fff;
+border: none;
+padding: 10px 14px;
+margin-left:10px;
+border-radius: 4px;
+margin-top:20px;
+}
+.hero-content .btn-one:hover{
+background-color: transparent;
+color:#fff;
+border: none;
+padding: 10px 14px;
+margin-left:10px;
+border-radius: 4px;
+margin-top:20px;
+}
+.hero-content .btn-two{
+background-color: transparent;
+color:#fff;
+border: none;
+padding: 10px 14px;
+margin-left:10px;
+border-radius: 4px;
+margin-top:20px;
+}
+.hero-content .btn-two:hover{
+background-color: #2cabe1;
+color:#fff;
+border: none;
+padding: 10px 14px;
+margin-left:10px;
+border-radius: 4px;
+margin-top:20px;
+}
+
+
+/*Hero section Ends */

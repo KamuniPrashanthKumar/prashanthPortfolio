@@ -1,0 +1,32 @@
+/* media 0px - 539px 
+ media 540px - 767px 
+
+tabs/ipads
+
+media 768px- 1023px */
+
+@media only screen and(max-width:0px) and (max-width:539px){
+   .media_card_2 {
+        position: relative;
+        bottom: 90px;
+    }
+}
+
+
+
+@media only screen and(max-width:0px) and (max-width:539px){
+    .media_card_3 {
+         position: relative;
+         bottom: 50px;
+     }
+ }
+ 
+
+    
+ @media only screen and(max-width:0px) and (max-width:539px){
+    .media_card_4 {
+         position: relative;
+         bottom: 60px;
+     }
+ 
+ }
